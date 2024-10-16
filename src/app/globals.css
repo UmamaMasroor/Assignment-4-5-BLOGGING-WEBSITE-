@@ -2,8 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* animista  */
+
+.scale-in-hor-center {
+	-webkit-animation: scale-in-hor-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-hor-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+ @-webkit-keyframes scale-in-hor-center {
+  0% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    opacity: 1;
+  }
+}
+@keyframes scale-in-hor-center {
+  0% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    opacity: 1;
+  }
+}
+
 body {
-    @apply bg-[#f4f1de]; 
+    @apply bg-[#f7ede2]; 
     /* Tailwind utility for background color */
     
     display: flex;
@@ -14,7 +47,7 @@ body {
 
 /* header styling */
 header {
-    background-color: #e07a5f;
+    background-color: #f6bd60;
     /* color: #FDFCDC; */
     height: 60px;
 
@@ -35,6 +68,19 @@ header ul li:hover {
 
 /* Card  */
 
+.card button {
+  background-color: #434141;
+  padding: 5px;
+  border-radius: 15px;
+  width: 40%;
+  display: block;
+  margin: auto;
+  color: white;
+}
+.card button:hover{
+  background-color: #ccc;
+  color: black;
+}
 .card {
     
     margin: 40px;
@@ -61,6 +107,7 @@ header ul li:hover {
   
   .card-content {
     padding: 16px;
+    
   }
   
   .card-heading {
@@ -97,8 +144,7 @@ header ul li:hover {
   text-align: center;
   font-size: 40px;
   font-weight: 500;
-  color: #e07a5f;
-  background-color: #ccc;
+
 
 }
 .text-focus-in {
@@ -159,7 +205,7 @@ header ul li:hover {
  * animation tilt-in-top-1
  * ----------------------------------------
  */
- @-webkit-keyframes tilt-in-top-1 {
+@-webkit-keyframes tilt-in-top-1 {
   0% {
     -webkit-transform: rotateY(30deg) translateY(-300px) skewY(-30deg);
             transform: rotateY(30deg) translateY(-300px) skewY(-30deg);
@@ -187,7 +233,7 @@ header ul li:hover {
 
 /* Footer Styling */
 footer {
-    background-color: #e07a5f;
+    background-color: #f6bd60;
     padding: 20px 0;
     text-align: center;
     margin-top: auto; /* Push footer to the bottom of the page */

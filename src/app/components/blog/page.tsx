@@ -9,7 +9,7 @@ return(
         <Image src={Ai} alt="AI Image" className="tilt-in-top-1" />
         </div>
         <div>
-        <h1 className="text-focus-in ">AI Revolution</h1>
+        <h1 className="text-focus-in">AI Revolution</h1>
             <p>
             The <b>AI Revolution </b>is a transformative period in the evolution of technology, characterized by rapid advancements in artificial intelligence. AI has become a core driver of innovation across industries, including healthcare, finance, education, and transportation, bringing new possibilities and efficiencies. Here’s a deeper look into what defines this revolution:</p>
 
